@@ -1,0 +1,258 @@
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .hero {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .hero-title {
+        letter-spacing: -5px;
+    }
+
+    .hero-bottom {
+        left: 7%;
+        right: 7%;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar {
+        padding: 20px 6%;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #101114;
+        border-bottom: 1px solid #2B2D33;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+
+        padding: 0 6%;
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .nav-links.active {
+        max-height: 350px;
+        padding: 20px 6%;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 15px 0;
+        width: fit-content;
+    }
+
+    /* Hamburger */
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+
+        background: none;
+        border: none;
+        padding: 8px;
+    }
+
+    .menu-toggle span {
+        width: 25px;
+        height: 2px;
+        background: #F2F0E9;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle.active span:first-child {
+        transform: translateY(4px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:last-child {
+        transform: translateY(-4px) rotate(-45deg);
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 100svh;
+        padding: 130px 6% 110px;
+    }
+
+    .availability {
+        margin-bottom: 35px;
+        font-size: 10px;
+    }
+
+    .hero-title {
+        font-size: clamp(55px, 12vw, 90px);
+        letter-spacing: -4px;
+        line-height: 1;
+        margin-bottom: 25px;
+    }
+
+    .hero-subtitle {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-bottom {
+        left: 6%;
+        right: 6%;
+        bottom: 20px;
+        font-size: 8px;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-title {
+        font-size: clamp(45px, 12vw, 58px);
+        letter-spacing: -3px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-tags {
+        gap: 8px;
+    }
+
+    .hero-tags span {
+        padding: 9px 12px;
+        font-size: 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-bottom span:last-child {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+
+    .about-intro h3 {
+        max-width: 100%;
+    }
+
+}
+
+/* =====================================
+   SKILLS RESPONSIVENESS
+===================================== */
+
+@media (max-width: 768px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .skill-category {
+        padding: 25px;
+    }
+
+    .skill-category h3 {
+        font-size: 19px;
+    }
+
+    .skill-list {
+        gap: 9px;
+    }
+
+    .skill-list span {
+        font-size: 12px;
+        padding: 10px 13px;
+    }
+
+}
+
+/* EDUCATION RESPONSIVE */
+
+@media (max-width: 768px) {
+    .education {
+        padding: 85px 6%;
+    }
+
+    .education-card {
+        padding: 30px 24px;
+    }
+
+    .education-card h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-card {
+        padding: 25px 20px;
+    }
+
+    .education-card p {
+        font-size: 0.75rem;
+        line-height: 1.7;
+    }
+}
